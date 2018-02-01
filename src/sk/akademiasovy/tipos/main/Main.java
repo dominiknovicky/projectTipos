@@ -13,6 +13,8 @@ public class Main {
         t.print();
 
         MySQLdatabase sql = new MySQLdatabase();
-        sql.insertValuesIntoDrawHistory(t.getArr());
+        //sql.insertValuesIntoDrawHistory(t.getArr());
+
+        sql.getNewBets();
     }
 }
