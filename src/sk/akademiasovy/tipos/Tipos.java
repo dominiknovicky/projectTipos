@@ -1,6 +1,7 @@
 package sk.akademiasovy.tipos;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 public class Tipos {
@@ -36,29 +37,21 @@ public class Tipos {
         Arrays.sort(arr);
     }
 
-    /*public void generate(){
-        Random rand = new Random();
-        arr[0] = rand.nextInt(35)+1;
-        int i = 1;
-        boolean unq;
-
-        while (i < 5) {
-            arr[i] = rand.nextInt(35)+1;
-            unq = true;
-            for (int j = 0; j < arr.length; j++) {
-                if (arr[i] == arr[j])
-                    unq = false;
-            }
-            if(unq == true)
-                i++;
-        }
-        Arrays.sort(arr);
-    }*/
-
-
     public void print (){
         for (int j = 0; j < arr.length; j++) {
             System.out.println(arr[j]);
+        }
+    }
+
+    public void printNewBets(List<Bet> list){
+        if (list == null || list.size() == 0){
+            System.out.println("No bets!");
+        }
+        else {
+            for(Bet temp:list){
+                System.out.println("Bet: "+temp.getId()+ " " +temp.getDate()+ " " +temp.getIduser());
+                System.out.println(" > " +temp.getBet1()+ " " +temp.getBet2()+ " " +temp.getBet3()+ " " +temp.getBet4()+ " " +temp.getBet5()+ " < ");
+            }
         }
     }
 }

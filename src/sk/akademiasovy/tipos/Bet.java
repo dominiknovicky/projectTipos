@@ -13,6 +13,42 @@ public class Bet {
     private int bet4;
     private int bet5;
 
+    public int getId() {
+        return id;
+    }
+
+    public int getIduser() {
+        return iduser;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public int getDraw_id() {
+        return draw_id;
+    }
+
+    public int getBet1() {
+        return bet1;
+    }
+
+    public int getBet2() {
+        return bet2;
+    }
+
+    public int getBet3() {
+        return bet3;
+    }
+
+    public int getBet4() {
+        return bet4;
+    }
+
+    public int getBet5() {
+        return bet5;
+    }
+
     public Bet(int id, int iduser, Date date, int bet1, int bet2, int bet3, int bet4, int bet5) {
         this.id = id;
         this.iduser = iduser;
